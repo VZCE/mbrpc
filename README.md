@@ -9,9 +9,6 @@ This old project is an RPC integration for Discord, designed to work with MusicB
 
 - Real-time display of the currently playing track information (title, artist, album, artwork, timestamps).
 - Automatic updating of Discord status with the current track.
-- Supports custom statuses for enhanced personalization.
-- Drag and drop markdown and HTML files into Dillinger
-- Export documents as Markdown, HTML and PDF
 
 ## 📋 Prerequisites
 
