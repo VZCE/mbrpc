@@ -1,6 +1,6 @@
 # mbrpc
 
-This old project is an RPC integration for Discord, designed to work with MusicBee, a popular music player. Developed in Node.js, this script allows you to display the currently playing music information from MusicBee directly on your Discord profile. I completed this project with the help of the Beekeeper plugin, which allowed me to write it in JavaScript (avoiding C# which I am not familiar with).
+This old project of mine is an RPC integration for Discord, designed to work with MusicBee, a popular music player. Developed in Node.js, this script allows you to display the currently playing music information from MusicBee directly on your Discord profile. I completed this **project with the help of the Beekeeper plugin**, which allowed me to write it in JavaScript (avoiding C# which I am not familiar with).
 
 [![Issues](https://img.shields.io/github/issues/vzce/mbrpc/total.svg?style=for-the-badge)]()
 [![Github All Releases](https://img.shields.io/github/downloads/vzce/mbrpc/total.svg?style=for-the-badge)]()
@@ -56,7 +56,7 @@ API_URL="http://127.0.0.1:8080"
 IMGBB_API_KEY=""
 ```
 
-The API port for Beekeeper is the same for everyone unless you change the port in the MusicBee settings.
+The API port for Beekeeper is the same for everyone unless you change it in the MusicBee settings.
 
 ### 5. Configure your Discord application:
 
