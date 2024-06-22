@@ -41,12 +41,12 @@ Download and install the Beekeeper plugin from [here](http://grismar.net/beekeep
 
 - Go to [IMGBB](https://imgbb.com/).
 - Sign up for an account and generate an [API key](https://api.imgbb.com/).
-- Note the application ID and add it to the `IMGBB_API_KEY` field in the .env file.
+- Note the API key and add it later to the `IMGBB_API_KEY` field in the .env file.
 
 ### 4. Configure your Discord application:
 
 - Create a new application on the Discord [Developer Portal](https://discord.com/developers/applications).
-- Note the application ID and add it to the `CLIENT_ID` field in the .env file.
+- Note the application ID and add it later to the `CLIENT_ID` field in the .env file.
 
 ### 5. Create a `.env` file at the root of the project and insert the following information:
 
