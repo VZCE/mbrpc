@@ -2,6 +2,8 @@
 
 This old project of mine is an RPC integration for Discord, designed to work with MusicBee, a popular music player. Developed in Node.js, this script allows you to display the currently playing music information from MusicBee directly on your Discord profile. I completed this **project with the help of the Beekeeper plugin**, which allowed me to write it in JavaScript (avoiding C# which I am not familiar with).
 
+<img align=center src="https://i.imgur.com/F9s0X9X.png">
+
 [![Issues](https://img.shields.io/github/issues/vzce/mbrpc/total.svg?style=for-the-badge)]()
 [![Github All Releases](https://img.shields.io/github/downloads/vzce/mbrpc/total.svg?style=for-the-badge)]()
 
@@ -39,13 +41,19 @@ Download and install the Beekeeper plugin from [here](http://grismar.net/beekeep
 
 - Go to [IMGBB](https://imgbb.com/).
 - Sign up for an account and generate an [API key](https://api.imgbb.com/).
+- Note the application ID and add it to the `IMGBB_API_KEY` field in the .env file.
 
-### 4. Create a `.env` file at the root of the project and insert the following information:
+### 4. Configure your Discord application:
+
+- Create a new application on the Discord [Developer Portal](https://discord.com/developers/applications).
+- Note the application ID and add it to the `CLIENT_ID` field in the .env file.
+
+### 5. Create a `.env` file at the root of the project and insert the following information:
 
 ```env
 ## DISCORD
 
-CLIENT_ID=""
+CLIENT_ID="YOUR_DISCORD_APP_CLIENTID"
 SMALL_IMAGE_KEY=""
 
 ## BEEKEEPER
@@ -53,15 +61,11 @@ SMALL_IMAGE_KEY=""
 API_URL="http://127.0.0.1:8080"
 
 # IMGBB
-IMGBB_API_KEY=""
+IMGBB_API_KEY="YOUR_IMGBB_API_KEY"
 ```
 
 The API port for Beekeeper is the same for everyone unless you change it in the MusicBee settings.
 
-### 5. Configure your Discord application:
-
-- Create a new application on the Discord [Developer Portal](https://discord.com/developers/applications).
-- Note the application ID and add it to the CLIENT_ID field in the .env file.
 
 ### 6. Start the script
 
