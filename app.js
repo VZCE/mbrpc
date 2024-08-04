@@ -13,7 +13,7 @@ let newInfo = null;
 let rpc = new DiscordRPC.Client({ transport: "ipc" });
 
 async function updateDiscordRPC() {
-  const details = newInfo.trackTitle || "unknown";
+  const title = " " + newInfo.trackTitle || "Untitled";
   const state = newInfo.artist || "unknown";
   const largeImageText = newInfo.album || "unknown";
   const largeImageKey =
