@@ -13,21 +13,21 @@ let newInfo = null;
 let rpc = new DiscordRPC.Client({ transport: "ipc" });
 
 async function updateDiscordRPC() {
-  const details = newInfo.trackTitle || "unknown";
-  const state = newInfo.artist || "unknown";
-  const largeImageText = newInfo.album || "unknown";
+  const title = " " + newInfo.trackTitle || "Untitled";
+  const artist = "by " + newInfo.artist || "Unknown Artist";
+  const album = newInfo.album || title;
   const largeImageKey =
     (await fetchAndUploadArtwork(newInfo.fileUrl)) || "unknown";
   const smallImageKey = process.env.SMALL_IMAGE_KEY || "unknown";
 
   rpc.setActivity({
-    details: details,
-    state: state,
+    details: title,
+    state: artist,
     startTimestamp: Date.now() - newInfo.fileGetPosition * 60 * 1000,
     endTimestamp:
       Date.now() + (newInfo.fileDuration - newInfo.fileGetPosition) * 60 * 1000,
     largeImageKey: largeImageKey,
-    largeImageText: largeImageText,
+    largeImageText: album,
     smallImageKey: smallImageKey,
     smallImageText: "v0.3.3 by VNCE",
   });
