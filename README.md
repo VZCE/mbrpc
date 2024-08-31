@@ -70,7 +70,7 @@ The API port for Beekeeper is the same for everyone unless you change it in the 
 ### 6. Start the script
 
 ```sh
-node index.js
+node app.js
 ```
 
 ## Usage
